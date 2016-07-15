@@ -1,4 +1,4 @@
-# bgd_modbus
+# bgd_modbus V1.0
 # A simple modbus slave
   Website: bgddev.com
 # 
