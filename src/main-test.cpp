@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
 	std::cout<< "Starting modbus...on port 502" <<std::endl;
 
 	Modbus_bgd modbus;
-	modbus.begin_listening("5002");
+	modbus.begin_listening();
 	/*
 		# To start modbus on different port
 		# modbus.begin_listening("5002");
