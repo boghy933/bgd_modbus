@@ -335,7 +335,7 @@ void Modbus_bgd::ForceMultipleCoils(tcp_request info_data, int new_sd) {
 	
 	int i=0;
 	int starting_register = info_data.start_register;
-	int end_register = info_data.start_register + info_data.number_requested;
+	int end_register = info_data.start_register + info_data.number_requested - 1;
 	bool flag = false, end = false;
 	int reg_position,shifter;
 	/*
@@ -410,7 +410,7 @@ void Modbus_bgd::WriteMultipleRegisters(tcp_request info_data, int new_sd) {
 	*/
 	int i=0;
 	int starting_register = info_data.start_register;
-	int end_register = info_data.start_register + info_data.number_requested;
+	int end_register = info_data.start_register + info_data.number_requested - 1;
 	bool flag = false;
 	/*
 	 # UPDATING REGISTERS
